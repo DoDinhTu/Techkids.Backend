@@ -1,0 +1,22 @@
+<h1>HOTGIRL LIST</h1>
+      <button class="add">ADD</button>
+        <table border="1" style="width:100%">
+          <tr>
+            <td>name</td>
+            <td>age</td>
+            <td>facebook</td>
+            <td>password</td>
+            <td>action</td>
+          </tr>
+
+          <tr ng-repeat = "g in listgirl">
+            <td>{{g.name}}</td>
+            <td>{{g.age}}</td>
+            <td>{{g.facebook}}</td>
+            <td>{{g.password}}</td>
+            <td><button class="update">Update</button><button class="Delete" ng-click="delete(name)">Delete</button>
+
+    </table>
+    <tr>
+      <button>1</button><button>2</button><button>3</button><button>...</button>
+    </tr>
