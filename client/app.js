@@ -1,24 +1,24 @@
 var myAngular = angular.module("myAngular",["ui.router"]);
 
-myAngular.config(function($stateProvider,$urlRouterProvider){
+myAngular.config(function($stateProvider, $urlRouterProvider){
   $urlRouterProvider.otherwise('/home');
 
   $stateProvider.state('home',{
     url:"/home",
-    templateUrl:"templates/home.html"
-    controller: "HomeController"
-    params: {girl: null}
+    templateUrl:"templates/home.html",
+    controller: "myController",
+    params: {girl: null},
   });
 
   $stateProvider.state('about-us',{
     url:"/about-us",
-    templateUrl:"templates/about-us.html"
+    templateUrl:"templates/about-us.html",
   });
 
   $stateProvider.state('add',{
     url:"/add",
-    templateUrl:"templates/add.html"
-    controller:"girlController"
+    templateUrl:"templates/add.html",
+    controller:"girlController",
   });
 });
 

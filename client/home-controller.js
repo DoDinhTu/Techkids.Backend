@@ -15,7 +15,7 @@ myAngular.config(function($stateProvider,$urlRouterProvider){
 });
 
 
-myAngular.controller("myController",["$scope",function($scope){
+myAngular.controller("myController",["$scope", "$state", "$stateParams", function($scope, $state, $stateParams){
 
   $scope.listgirl = [{
     name:"Dzung",
@@ -60,7 +60,7 @@ myAngular.controller("myController",["$scope",function($scope){
   }
 
   $scope.add = function() {
-    $state.go("add-girl");
+    $state.go("add");
   }
 
 }]);
